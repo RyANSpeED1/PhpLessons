@@ -10,8 +10,9 @@
         <button>submit</button>
     </form>
 <?php
-    $name = $_GET['person'];
-    echo $name." Coach B is the best coach ever!";
+   //This gets something from the database
+    /*echo "Hi";
+    echo "World";*/
 ?>
 </body>
 </html>
