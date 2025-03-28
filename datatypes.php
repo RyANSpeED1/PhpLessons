@@ -14,9 +14,7 @@
     //float
      $name = 5.5;
     //boolean
-     true = 1
-     false = 0 
     //array
         $names = array("Madison", "Academic", "Track");
-        echo $names['3']; //Track
+        echo $names['2']; //Track
 ?>
