@@ -33,5 +33,13 @@
    echo $x--;
    echo $x;
 ?>
+<?php
+   //logical operators
+   $x = 5;
+   $y = 10;
+   if ($x == $y xor 1 == 1) {
+       echo "True";
+   }
+?>
 </body>
 </html>
