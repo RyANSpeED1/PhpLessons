@@ -20,11 +20,18 @@
    //comparison operators
    $x = 5;
    $y = 10;
-   if ($x == $y) {
+   if ($x <> $y) {
        echo "True";
-   } else {
-       echo "Not equal";
    }
-
+    else {
+       echo "False";
+   }
+?>
+<?php
+   //increment/decrement operators
+   $x = 5;
+   echo $x--;
+   echo $x;
+?>
 </body>
 </html>
