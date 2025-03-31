@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Anything</title>
+</head>
+<body>
+<?php
+   //conditionals
+   if ($x == 1) {
+       echo "Ryan is the fastest runner";
+   }
+    elseif ($x == 2) {
+         echo "Ryan Never gets injured";
+    }
+    elseif ($x == 3) {
+         echo "Ryan never gives excuses";
+    }
+    elseif ($x == 4){
+         echo "Ryan always shows up to practice 30 minutes early";
+    }
+    else ($x == 5) {
+         echo "Ryan is the best runner in the world";
+    }
+?>
+</body>
+</html>
