@@ -6,15 +6,6 @@
 </head>
 <body>
 <?php
-    //string
-     $name = "Running is hard";
-
-    //integer
-     $name = 5;
-    //float
-     $name = 5.5;
-    //boolean
-    //array
-        $names = array("Madison", "Academic", "Track");
-        echo $names['2']; //Track
+    //arithmetic operations
+    echo 6**6;
 ?>
