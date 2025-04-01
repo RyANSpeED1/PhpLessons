@@ -4,7 +4,6 @@
     <title>Simple PHP Calculator</title>
 </head>
 <body>
-    <h2>PHP Calculator</h2>
     <form method="post" action="">
         <input type="number" name="num1" placeholder="Enter first number" required>
         <select name="operation">
