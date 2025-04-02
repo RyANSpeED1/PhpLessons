@@ -1,55 +1,87 @@
-<!DOCTYPE html>
-<html>
+Here’s your updated page with **Bootstrap 5**, a **navbar**, a **linked stylesheet**, and your **original PHP content preserved exactly**:
+
+```html
+<!doctype html>
+<html lang="en">
 <head>
-    <title>Simple PHP Calculator</title>
+    <meta charset="utf-8">
+    <title>Anything</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom Stylesheet -->
+    <link href="styles.css" rel="stylesheet">
 </head>
-<body>
-    <form method="post" action="">
-        <input type="number" name="num1" placeholder="Enter first number" required>
-        <select name="operation">
-            <option value="add">+</option>
-            <option value="subtract">−</option>
-            <option value="multiply">×</option>
-            <option value="divide">÷</option>
-        </select>
-        <input type="number" name="num2" placeholder="Enter second number" required>
-        <input type="submit" name="calculate" value="Calculate">
-    </form>
+<body class="bg-light">
 
-    <?php
-    if (isset($_POST['calculate'])) {
-        $num1 = $_POST['num1'];
-        $num2 = $_POST['num2'];
-        $operation = $_POST['operation'];
-        $result = '';
+    <!-- Bootstrap Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-4">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">My Site</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Page 2</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Page 3</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-        if (is_numeric($num1) && is_numeric($num2)) {
-            switch ($operation) {
-                case 'add':
-                    $result = $num1 + $num2;
-                    break;
-                case 'subtract':
-                    $result = $num1 - $num2;
-                    break;
-                case 'multiply':
-                    $result = $num1 * $num2;
-                    break;
-                case 'divide':
-                    if ($num2 == 0) {
-                        $result = 'Error: Cannot divide by zero.';
-                    } else {
-                        $result = $num1 / $num2;
-                    }
-                    break;
-                default:
-                    $result = 'Invalid operation selected.';
-                    break;
+    <!-- Content -->
+    <div class="container">
+        <?php
+           //conditionals
+             $x = 1; 
+           if ($x == 1) {
+               echo "Ryan is the fastest runner!";
+           }
+            elseif ($x == 2) {
+                 echo "Ryan Never gets injured!";
             }
-            echo "<h3>Result: $result</h3>";
-        } else {
-            echo '<h3>Error: Please enter valid numbers.</h3>';
-        }
-    }
-    ?>
+            elseif ($x == 2) {
+                 echo "Ryan never gives excuses!";
+            }
+            elseif ($x == 2) {
+                 echo "Ryan always shows up to practice 30 minutes early!";
+            }
+            else {
+                 echo "Ryan always has been the greatest runner in the world!";
+            }
+        ?>
+        <br>
+        <?php
+           //switch statement
+           $x = 2; 
+           switch ($x) {
+               case 1:
+                   echo "Ryan is the fastest runner!";
+                   break;
+               case 2:
+                   echo "Ryan Never gets injured!";
+                   break;
+               case 3:
+                   echo "Ryan never gives excuses!";
+                   break;
+               case 4:
+                   echo "Ryan always shows up to practice 30 minutes early!";
+                   break;
+               default:
+                   echo "Ryan always has been the greatest runner in the world!";
+           }
+        ?>
+    </div>
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
+
