@@ -1,3 +1,8 @@
+<?php
+session_start();
+
+$_SESSION['username'] = "Ryan";
+?>
 <nav class="navbar navbar-expand-lg navbar-dark bg-custom mb-4">
   <div class="container-fluid">
     <a class="navbar-brand" href="index.php">Tools Hub</a>
@@ -21,11 +26,19 @@
   </div>
 </nav>
 
+
 <?php
-$_session ['username'] = "ryan4794p";
+
+$_session ['username'] = "Ryan";
 echo $_session['username'];
 if (isset($_session['username'])) {
-    echo "You are not logged in.";
-} else {
     echo "You are logged in.";
+} else {
+    echo "You are not logged in.";
 }
+
+
+
+
+
+?>
