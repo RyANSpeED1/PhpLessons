@@ -50,6 +50,6 @@ if (isset($_session['username'])) {
     <?php if (isset($_SESSION["userid"])): ?>
         <p>Welcome, you are signed in!</p>
     <?php else: ?>
-        <p>You are not signed in.</p>
+        <p>You are not signed in!</p>
     <?php endif; ?>
 </nav>
