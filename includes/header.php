@@ -1,5 +1,4 @@
 <?php
-session_start();
 
 $_SESSION['username'] = "Ryan";
 ?>
@@ -21,6 +20,11 @@ $_SESSION['username'] = "Ryan";
         <li class="nav-item"><a class="nav-link" href="loops.php">Loops</a></li>
         <li class="nav-item"><a class="nav-link" href="operators.php">Operators</a></li>
         <li class="nav-item"><a class="nav-link" href="superglobals.php">Superglobals</a></li>
+        <li class="nav-item"><a class="nav-link" href="contacts.php">Contacts</a></li>
+        <li class="nav-item"><a class="nav-link" href="dashboard.php">Dashboard</a></li>
+        <li class="nav-item"><a class="nav-link" href="login.php">login</a></li>
+        <li class="nav-item"><a class="nav-link" href="logout.php">logout</a></li>
+        <li class="nav-item"><a class="nav-link" href="Register.php">Register</a></li>
       </ul>
     </div>
   </div>
@@ -42,3 +46,10 @@ if (isset($_session['username'])) {
 
 
 ?>
+<nav>
+    <?php if (isset($_SESSION["userid"])): ?>
+        <p>Welcome, you are signed in!</p>
+    <?php else: ?>
+        <p>You are not signed in.</p>
+    <?php endif; ?>
+</nav>

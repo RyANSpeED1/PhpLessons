@@ -1,16 +1,15 @@
+
 <!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Arrays</title>
+  <title>Home</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="styles.css" rel="stylesheet">
 </head>
 <body class="bg-light">
-  <?php include 'includes/database.php';
-include 'includes/header.php';
- ?>
-
+  <?php include 'includes/header.php'; ?>
+  <?php include_once 'includes/database.php'; ?>
   <div class="container">
     <form method="get" class="mb-3">
       <div class="mb-3">
@@ -19,9 +18,13 @@ include 'includes/header.php';
       <button type="submit" class="btn btn-primary">Submit</button>
     </form>
     <?php
-      $array = array("Logan", "Jacob", "Austin", "Jackson", "Ryan");
-      echo $array[4];
-    ?>
+        
+           session_start();
+           session_destroy();
+           header("Location: login.php");
+           exit();
+           
+        ?>
   </div>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>

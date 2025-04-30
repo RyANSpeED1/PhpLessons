@@ -8,7 +8,7 @@
 </head>
 <body class="bg-light">
   <?php include 'includes/header.php'; ?>
-
+  <?php include_once 'includes/database.php'; ?>
   <div class="container">
     <form method="get" class="mb-3">
       <div class="mb-3">
@@ -17,9 +17,14 @@
       <button type="submit" class="btn btn-primary">Submit</button>
     </form>
     <?php
-            //This gets something from the database
-            /*echo "Hi";
-            echo "World";*/
+           $sql = "SELECT * FROM users Where username = 'Ryan';";
+           $result = mysqli_query($conn, $sql);
+           $resultCheck = mysqli_num_rows($result);
+            if ($resultCheck > 0) {
+                while ($row = mysqli_fetch_assoc($result)) {
+                    echo $row['Username'] . "<br>";
+                }
+            }
         ?>
   </div>
 

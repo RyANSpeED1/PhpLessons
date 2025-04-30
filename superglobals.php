@@ -7,7 +7,11 @@
   <link href="styles.css" rel="stylesheet">
 </head>
 <body class="bg-light">
-  <?php include 'includes/header.php'; ?>
+<?php 
+include 'includes/database.php';
+include 'includes/header.php';
+?>
+
     <?php
 
     setcookie("name", "Ryan", time() - 172,800);
